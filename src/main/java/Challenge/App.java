@@ -6,36 +6,35 @@
 package Challenge;
 
 /*
-Write a program to compute the value of an investment compounded over time.
-The program should ask for the starting amount, the number of years to
-invest, the interest rate, and the number of periods per year to compound.
-
-The formula you’ll use for this is A = P(1 + r/n)^(n*t) where:
-P is the principal amount.
-r is the annual rate of interest.
-t is the number of years the amount is invested.
-n is the number of times the interest is compounded per year.
-A is the amount at the end of the investment.
+Write a simple program to compute the tax on an order amount. The program
+should prompt for the order amount and the state. If the state is “WI,”
+then the order must be charged 5.5% tax. The program should display the
+subtotal, tax, and total for Wisconsin residents but display just the total
+for non-residents.
 
 Example Output:
-What is the principal amount? 1500
-What is the rate? 4.3
-What is the number of years? 6
-What is the number of times the interest is compounded per year? 4
-$1500 invested at 4.3% for 6 years compounded 4 times per year is $1938.84.
+What is the order amount? 10
+What is the state? WI
+The subtotal is $10.00.
+The tax is $0.55.
+The total is $10.55.
+        Or
+What is the order amount? 10
+What is the state? MN
+The total is $10.00
 
-Constraints:
-Prompt for the rate as a percentage (like 15, not .15). Divide the input by 100 in your program.
-Ensure that fractions of a cent are rounded up to the next penny.
-Ensure that the output is formatted as money.
+Constraints
+*Implement this program using only a simple if statement—don’t use an else
+clause.
+*Ensure that all money is rounded up to the nearest cent.
+*Use a single output statement at the end of the program to display the
+program results.
 
 Challenges:
-*Ensure that all of the inputs are numeric and that the program will not
-let the user proceed without valid inputs.
-*Create a version of the program that works in reverse, so you can determine
-the initial amount you’d need to invest to reach a specific goal.
-*Implement this program as a GUI app that automatically updates the values
-when any value changes.
+*Allow the user to enter a state abbreviation in upper, lower, or mixed
+case.
+*Also allow the user to enter the state’s full name in upper, lower, or
+mixed case.
  */
 
 public class App {
